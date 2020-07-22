@@ -9,6 +9,10 @@ export class HelloWorldModel extends Observable {
     link: string;
     quote: string;
     code: string;
+    table: string;
+    images: string;
+    html: string;
+    gif: string;
 
     constructor() {
         super();
@@ -19,5 +23,9 @@ export class HelloWorldModel extends Observable {
         this.link = "[Sample link](https://github.com/flore2003/nativescript-markdown-view)";
         this.quote = "> Quote\n>> Quote";
         this.code = "`private doSomething(): Something[]`";
+        this.table = '| Option | Description |\n| ------ | ----------- |\n| data   | path to data files to supply the data that will be passed into templates. |\n| engine | engine to be used for processing templates. Handlebars is the default. |\n| ext    | extension to be used for dest files. |';
+        this.images = '![Minion](https://octodex.github.com/images/minion.png)';
+        this.html = '<u><i>H<sup>T<sub>M</sub></sup><b><s>L</s></b></i></u>';
+        this.gif = '![GIF](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif)';
     }
 }

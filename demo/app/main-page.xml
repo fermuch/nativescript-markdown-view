@@ -24,6 +24,18 @@
 
             <Label class="h1" text="Code" style="margin-top: 10; margin-bottom: 10;"/>
             <mv:MarkdownView textWrap="true" markdown="{{code}}"/>
+
+            <Label class="h1" text="Table" style="margin-top: 10; margin-bottom: 10;"/>
+            <mv:MarkdownView textWrap="true" markdown="{{table}}" />
+
+            <Label class="h1" text="Images" style="margin-top: 10; margin-bottom: 10;"/>
+            <mv:MarkdownView textWrap="true" markdown="{{images}}" />
+
+            <Label class="h1" text="HTML" style="margin-top: 10; margin-bottom: 10;"/>
+            <mv:MarkdownView textWrap="true" markdown="{{html}}" />
+
+            <Label class="h1" text="GIF" style="margin-top: 10; margin-bottom: 10;"/>
+            <mv:MarkdownView textWrap="true" markdown="{{gif}}" />
         </FlexboxLayout>
     </ScrollView>
 </Page>

@@ -5,6 +5,10 @@ android {
 }
 
 dependencies {
-    final def markwon_version = '3.0.1'
+    final def markwon_version = '3.0.2'
     implementation "ru.noties.markwon:core:$markwon_version"
+    implementation "ru.noties.markwon:ext-tables:$markwon_version"
+    implementation "ru.noties.markwon:html:$markwon_version"
+    implementation "ru.noties.markwon:image-okhttp:$markwon_version"
+    implementation "ru.noties.markwon:image-gif:$markwon_version"
 }

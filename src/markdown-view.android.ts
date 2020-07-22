@@ -20,7 +20,13 @@ export class MarkdownView extends MarkdownViewBase {
     }
 ​
     public createNativeView() {
-        this.markwon = ru.noties.markwon.Markwon.create(this._context);
+        this.markwon = ru.noties.markwon.Markwon.builder(this._context)
+            .usePlugin(ru.noties.markwon.image.ImagesPlugin.create(this._context))
+            .usePlugin(ru.noties.markwon.image.gif.GifPlugin.create())
+            .usePlugin(ru.noties.markwon.image.okhttp.OkHttpImagesPlugin.create())
+            .usePlugin(ru.noties.markwon.ext.tables.TablePlugin.create(this._context))
+            .usePlugin(ru.noties.markwon.html.HtmlPlugin.create())
+            .build();
         this._android = new android.widget.TextView(this._context);
         this._android.setInputType(InputType.TYPE_NULL);
         return this._android;
